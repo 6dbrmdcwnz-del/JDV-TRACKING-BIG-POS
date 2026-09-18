@@ -1,7 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "jdv-arcadia-lp-tracker",
+  "name": "jdv-tracking-big-pos",
   "main": "worker.js",
   "compatibility_date": "2026-08-30",
-  "assets": { "directory": ".", "binding": "ASSETS", "not_found_handling": "single-page-application" }
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  }
 }

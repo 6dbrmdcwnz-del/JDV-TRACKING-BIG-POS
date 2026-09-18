@@ -46,3 +46,9 @@ PROOFING CHANGES IN V1.5
 - Updated outbound API client version identifier.
 - Added stricter Arcadia response validation: missing/invalid/empty assets fail closed instead of rendering misleading zero-like values.
 - Re-ran automated tests and JavaScript syntax checks before packaging.
+
+
+BUILD FIX 1.5.1
+- Static assets isolated in ./public so Wrangler cannot upload node_modules as assets.
+- Worker name aligned with Cloudflare connected-build name jdv-tracking-big-pos.
+- Worker source and npm dependencies remain outside the assets directory.
