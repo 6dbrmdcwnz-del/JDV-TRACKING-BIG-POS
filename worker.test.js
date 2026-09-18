@@ -23,7 +23,7 @@ test('pool ranking remains useful when m15 volume is temporarily zero',()=>{
 test('build is pinned to the requested D42A Arcadia account',async()=>{
   const fs=await import('node:fs/promises');
   const worker=await fs.readFile(new URL('./worker.js',import.meta.url),'utf8');
-  const html=await fs.readFile(new URL('./assets/index.html',import.meta.url),'utf8');
+  const html=await fs.readFile(new URL('./index.html',import.meta.url),'utf8');
   const requested='0xd42A3Ac56456bD5422835B36C35Cacb6448ddCd9';
   assert.ok(worker.includes(requested)); assert.ok(html.includes(requested));
   assert.ok(!worker.includes('0x5B79820AA33E60318C83930311832E2Af090d339'));

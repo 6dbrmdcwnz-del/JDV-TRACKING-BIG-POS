@@ -2,10 +2,5 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "jdv-tracking-big-pos",
   "main": "worker.js",
-  "compatibility_date": "2026-09-17",
-  "assets": {
-    "directory": "./assets",
-    "binding": "ASSETS",
-    "not_found_handling": "single-page-application"
-  }
+  "compatibility_date": "2026-09-17"
 }
